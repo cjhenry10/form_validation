@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: gray;
+}
+
+.container {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+div.left {
+    width: 30%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/fern.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    /* position: relative; */
+    align-items: center;
+}
+
+.left h2 {
+    color: white;
+}
+
+.left .center {
+    flex: 0 0 auto;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.center img {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    height: 25vh;
+    width: auto;
+}
+
+.right {
+    width: 70%;
+    height: 100vh;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.right > * {
+    position: relative;
+    flex: 0 0 100%;
+    /* height: auto; */
+}
+
+.text {
+    position: relative;
+    margin-top: 20vh;
+}
+
+.form-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    background-color: #fff;
+    max-width: 90%;
+    box-shadow: 0px 2px 20px -3px #707070;
+    margin-bottom: 25vh;
+}
+
+form {
+    /* position: relative; */
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+form > * {
+    padding-top: 20px;
+}
+
+label, input {
+    display: block;
+}
